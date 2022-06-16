@@ -1,6 +1,4 @@
-from tabnanny import verbose
 from django.db import models
-
 
 # Create your models here.
 class Order(models.Model):
@@ -15,4 +13,4 @@ class Order(models.Model):
     class Meta:
         verbose_name = 'Заказ' #для Order делаем перевод 
         verbose_name_plural = 'Заказы' #для множественного числа Order делаем перевод
-    
+     
