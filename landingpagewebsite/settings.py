@@ -32,6 +32,8 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'telebot.apps.TelebotConfig',
+    'price.apps.PriceConfig', #добавили сслыку на приложение в папке price
     'cms.apps.CmsConfig', #добавили сслыку на приложение в папке cms
     'crm.apps.CrmConfig', #добавили сслыку на приложение в папке crm, CrmConfig взяли из файла apps.py
     'django.contrib.admin',
