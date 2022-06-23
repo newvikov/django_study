@@ -65,7 +65,7 @@ ROOT_URLCONF = 'landingpagewebsite.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR,'teamplates'),], #указали где будут лежать шаблоны, например html
+        'DIRS': [os.path.join(BASE_DIR,'templates'),], #указали где будут лежать шаблоны, например html
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
