@@ -7,6 +7,9 @@ from cms.models import CmsSlider
 from price.models import PriceTable, PriceCard
 from telebot.sendmessage import sendTelegram
 
+# добавляю логи
+import logging
+logger = logging.getLogger(__name__)
 
 # Create your views here.
 def first_page(request):
@@ -33,6 +36,7 @@ def thanks_page(request):
         element = Order(order_name = name, order_phone = phone)
         element.save()
         sendTelegram(tg_name = name, tg_phone = phone)
+        logging.info()
         return render(request, './thanks.html', {'name': name,})
     else:
         return render(request, './thanks.html')
